@@ -4,13 +4,13 @@
 <div class="col-sm-12 col-lg-12">
     <div class="card">
         <div class="card-body">
-            <form action="{{$data == null ? '/product/store':'/product/'.$data->id.'/update'}}" method="post">
+            <form action="{{$data == null ? '/product/store':'/product/'.$data->id.'/update'}}" method="post" enctype="multipart/form-data">
                 @csrf
                 @if ($data != null)
                 @method('PUT')
                 @endif
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-6">
                         <div class="form-group">
                             <label for="">Code</label>
                             <input type="text" name="code" value="{{$data->code ?? ''}}" class="form-control" required>
@@ -46,6 +46,24 @@
                                 @endif
                             </select>
 
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="">Photo</label>
+                            @if ($data == null)
+                            <input type="file" class="dropify" name="photo" data-default-file="Image" />
+                            @else
+                            <input type="file" class="dropify" name="photo" data-default-file="{{$data->photo}}" />
+                            @endif
+                        </div>
+                        <div class="form-group">
+                            <label for="">Title</label>
+                            <input type="text" name="title" value="{{$data->title ?? ''}}" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="">Sub Title</label>
+                            <input type="text" name="sub_title" value="{{$data->sub_title ?? ''}}" class="form-control" required>
                         </div>
                     </div>
                 </div>

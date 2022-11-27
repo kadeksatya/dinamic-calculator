@@ -12,7 +12,10 @@ class HomeController extends Controller
     {
         $product = Product::all();
         $tenor = Tenor::all();
+
+        $getDataByCode = Product::where('code', $request->code)->first();
         return view('front.index', [
+            'info' => $getDataByCode,
             'product' => $product,
             'tenor' => $tenor,
         ]);

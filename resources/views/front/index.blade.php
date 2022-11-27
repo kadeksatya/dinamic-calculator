@@ -25,9 +25,9 @@
         <div class="marketing">
             <div class="row featurette container">
                 <div class="col-md-7 order-md-2">
-                    <h2 class=" fw-normal lh-1 title-page">Simulasi</h2>
-                    <p class="lead sub-title">Tertarik membuat deposito?</p>
-                    <p class="lead sub-title">Kunjungi cabang terderkat kami.</p>
+                    <h2 class=" fw-normal lh-1 title-page">Simulasi {{$info->name ?? '-'}}</h2>
+                    <p class="lead sub-title">{{$info->title ?? '-'}}</p>
+                    <p class="lead sub-title">{{$info->sub_title ?? '-'}}</p>
 
                     <input type="hidden" class="is_cc" value="{{request()->get('is_cc')}}">
                     <input type="hidden" class="is_deposito" value="{{request()->get('is_deposito')}}">
@@ -194,7 +194,7 @@
 
                 </div>
                 <div class="col-md-5 order-md-1">
-                    <img src="{{asset('assets/graphic-atm.png')}}"
+                    <img src="{{ $info->photo ?? asset('assets/graphic-atm.png')}}"
                         class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" alt=""
                         srcset="">
                 </div>
@@ -296,7 +296,7 @@
                         suku_bunga_result.text(result.toFixed(3));
                     }
                 }
-                else if(is_other = 1) {
+                else if(is_cc == 0 && is_deposito == 0) {
                     if (jangka_waktu >= 24) {
                         suku_bunga_result.text(suku_bunga_flat.toFixed(3));
                     }else{

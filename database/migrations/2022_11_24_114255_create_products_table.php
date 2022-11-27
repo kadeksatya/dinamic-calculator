@@ -16,6 +16,9 @@ class CreateProductsTable extends Migration
         Schema::create('products', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->text('name');
+            $table->text('title');
+            $table->text('photo')->nullable();
+            $table->text('sub_title');
             $table->text('code');
             $table->tinyInteger('is_deposito')->default(0);
             $table->tinyInteger('is_creadit_certificate')->default(0);

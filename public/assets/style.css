@@ -7,6 +7,10 @@
   src: url(font/KeepCalm-Medium.ttf);
 }
 
+@font-face {
+  font-family: Roboto;
+  src: url(font/Roboto/Roboto-Thin.ttf);
+}
 
 body {
     padding-top: 3rem;
@@ -25,7 +29,7 @@ body {
 
   .sub-title{
     margin-top: -12px;
-    font-family: 'Roboto' !important;
+    font-family: Roboto !important;
   }
   
   .bd-placeholder-img {
