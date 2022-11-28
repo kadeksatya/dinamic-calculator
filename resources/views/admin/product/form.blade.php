@@ -65,6 +65,14 @@
                             <label for="">Sub Title</label>
                             <input type="text" name="sub_title" value="{{$data->sub_title ?? ''}}" class="form-control" required>
                         </div>
+                        <div class="form-group">
+                            <label for="">Sub Title 1</label>
+                            <input type="text" name="sub_title_1" value="{{$data->sub_title_1 ?? ''}}" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="">Sub Title 2</label>
+                            <input type="text" name="sub_title_2" value="{{$data->sub_title_2 ?? ''}}" class="form-control" required>
+                        </div>
                     </div>
                 </div>
         </div>

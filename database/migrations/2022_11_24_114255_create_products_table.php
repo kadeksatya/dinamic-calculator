@@ -19,6 +19,8 @@ class CreateProductsTable extends Migration
             $table->text('title');
             $table->text('photo')->nullable();
             $table->text('sub_title');
+            $table->text('sub_title_1')->nullable();
+            $table->text('sub_title_2')->nullable();
             $table->text('code');
             $table->tinyInteger('is_deposito')->default(0);
             $table->tinyInteger('is_creadit_certificate')->default(0);

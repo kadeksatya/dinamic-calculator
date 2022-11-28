@@ -27,7 +27,9 @@
                 <div class="col-md-7 order-md-2">
                     <h2 class=" fw-normal lh-1 title-page">Simulasi {{$info->name ?? '-'}}</h2>
                     <p class="lead sub-title">{{$info->title ?? '-'}}</p>
-                    <p class="lead sub-title">{{$info->sub_title ?? '-'}}</p>
+                    <p class="lead sub-title">{{$info->sub_title ?? ''}}</p>
+                    <p class="lead sub-title">{{$info->sub_title_1 ?? ''}}</p>
+                    <p class="lead sub-title">{{$info->sub_title_2 ?? ''}}</p>
 
                     <input type="hidden" class="is_cc" value="{{request()->get('is_cc')}}">
                     <input type="hidden" class="is_deposito" value="{{request()->get('is_deposito')}}">
@@ -122,10 +124,10 @@
                         <div class="col-md-12 mt-5">
                             <div class="d-grid gap-2 d-md-flex justify-content">
                                 <button class="btn btn-primary resetForm" type="button"
-                                    style="width: 200px; border-radius: 30px; padding: 9.8px; background: #103566; border-color: #103566;">ATUR
+                                    style="width: 200px; border-radius: 7px; padding: 9.8px; background: #103566; border-color: #103566;">ATUR
                                     ULANG</button>
                                 <button class="btn btn-primary submitForm"
-                                    style="width: 200px; border-radius: 30px; padding: 9.8px; background: #F86C73; border-color: #F86C73;"
+                                    style="width: 200px; border-radius: 7px; padding: 9.8px; background: #F86C73; border-color: #F86C73;"
                                     type="button">HITUNG</button>
                             </div>
                         </div>
@@ -149,7 +151,7 @@
                                 </div>
                                 <div class="mt-3">
                                     <center><button class="btn btn-primary aturUlang" type="button"
-                                            style="width: 200px; border-radius: 30px; padding: 9.8px; background: #F86C73; border-color: #F86C73;">ATUR
+                                            style="width: 200px; border-radius: 7px; padding: 9.8px; background: #F86C73; border-color: #F86C73;">ATUR
                                             ULANG</button></center>
                                 </div>
 
@@ -181,7 +183,7 @@
                                 </div>
                                 <div class="mt-3">
                                     <center><button class="btn btn-primary aturUlang" type="button"
-                                            style="width: 200px; border-radius: 30px; padding: 9.8px; background: #F86C73; border-color: #F86C73;">ATUR
+                                            style="width: 200px; border-radius: 7px; padding: 9.8px; background: #F86C73; border-color: #F86C73;">ATUR
                                             ULANG</button></center>
                                 </div>
 

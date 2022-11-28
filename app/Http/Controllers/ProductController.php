@@ -56,6 +56,8 @@ class ProductController extends Controller
                 'is_creadit_certificate' => $request->is_creadit_certificate,
                 'title' => $request->title,
                 'sub_title' => $request->sub_title,
+                'sub_title_1' => $request->sub_title_1,
+                'sub_title_2' => $request->sub_title_2,
                 'photo' => asset('assets/images') . '/' . $new_name,
 
             );
@@ -67,6 +69,8 @@ class ProductController extends Controller
                 'is_creadit_certificate' => $request->is_creadit_certificate,
                 'title' => $request->title,
                 'sub_title' => $request->sub_title,
+                'sub_title_1' => $request->sub_title_1,
+                'sub_title_2' => $request->sub_title_2,
                 'photo' => null
 
             );
@@ -103,6 +107,8 @@ class ProductController extends Controller
                 'is_creadit_certificate' => $request->is_creadit_certificate,
                 'title' => $request->title,
                 'sub_title' => $request->sub_title,
+                'sub_title_1' => $request->sub_title_1,
+                'sub_title_2' => $request->sub_title_2,
                 'photo' => asset('assets/images') . '/' . $new_name,
 
             );
@@ -114,6 +120,8 @@ class ProductController extends Controller
                 'is_creadit_certificate' => $request->is_creadit_certificate,
                 'title' => $request->title,
                 'sub_title' => $request->sub_title,
+                'sub_title_1' => $request->sub_title_1,
+                'sub_title_2' => $request->sub_title_2,
                 'photo' => null
 
             );
