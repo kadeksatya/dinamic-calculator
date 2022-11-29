@@ -34,7 +34,7 @@ function countCreditCerifiticate(amount, suku_bunga, tenor) {
     let sub_total = 0.0;
 
     angsuran = parseInt(amount) / parseInt(tenor)
-    sub_total = parseInt(amount) * (parseFloat(suku_bunga) / 100);
+    sub_total = parseInt(amount) * parseFloat(suku_bunga);
     total = parseInt(angsuran) + parseFloat(sub_total)
     console.log(total);
 

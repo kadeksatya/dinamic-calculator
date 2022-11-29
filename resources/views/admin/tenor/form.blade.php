@@ -67,11 +67,11 @@
                         </div>
                         <div class="form-group">
                             <label for="">Rate Float</label>
-                            <input type="number" step="0.10" name="rate_float" value="{{$data->rate_float ?? 0}}" class="form-control" required>
+                            <input type="number" step="any" name="rate_float" value="{{$data->rate_float ?? 0}}" class="form-control" required>
                         </div>
                         <div class="form-group">
                             <label for="">Rate Flat</label>
-                            <input type="number" step="0.10" name="rate_flat" value="{{$data->rate_flat ?? 0}}" class="form-control" required>
+                            <input type="number" step="any" name="rate_flat" value="{{$data->rate_flat ?? 0}}" class="form-control" required>
                         </div>
                     </div>
                 </div>

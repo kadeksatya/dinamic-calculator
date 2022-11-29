@@ -279,6 +279,8 @@
                 let suku_bunga_float = $('.time_period').find(":selected").attr('data-float') / 100;
                 let jangka_waktu = $('.time_period').find(':selected').val();
                 let who_is_input = $('.who_is_input').find(":selected").val();
+                let pns = 0.125;
+                let nonpns = 0.14;
 
                 let result = 0;
                 if (is_deposito == 1) {
